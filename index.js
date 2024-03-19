@@ -80,7 +80,28 @@ var zoom = (function () {
     // Zoom out if the user hits escape
     document.addEventListener("keyup", function (event) {
         if (level !== 1 && event.keyCode === 27) {
-            zoom.out();
+            zoom.out({
+                callback: function(){
+                    let ville = [
+                        document.querySelector("#marquise"),
+                        document.querySelector("#capelle"),
+                        document.querySelector("#boulogne"),
+                        document.querySelector("#portel"),
+                        document.querySelector("#outreau"),
+                        document.querySelector("#samer"),
+                        document.querySelector("#desvres"),
+                        document.querySelector("#st-etienne"),
+                        document.querySelector("#txt_boulogne"),
+                    ];
+                    const point_boulogne = document.querySelector("#gros_boulogne");
+                    const txt_boulogne = document.querySelector("#gros_txt_boulogne");
+                    point_boulogne.style.display = "inline";
+                    txt_boulogne.style.display = "inline";
+                    ville.forEach((element) => {
+                        element.style.display = "none";
+                    });
+                }
+            });
         }
     });
 
