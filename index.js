@@ -1,3 +1,11 @@
+let agglos;
+fetch("data.json").then(function (response) {
+    response.json().then(function (json) {
+        console.log(json);
+        agglos = json;
+    });
+});
+
 const lille = document.querySelector("#path3");
 const boulogne = document.querySelector("#path2-0");
 const calais = document.querySelector("#path4");
@@ -410,13 +418,7 @@ async function unfade(element) {
     }, 5);
 }
 
-let agglos;
-fetch("data.json").then(function (response) {
-    response.json().then(function (json) {
-        console.log(json);
-        agglos = json;
-    });
-});
+
 
 function generateCards(agglo, nomville, index) {
     const cardContainer = document.querySelector(".card-container");
