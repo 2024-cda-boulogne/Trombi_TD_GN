@@ -1,38 +1,44 @@
-#path3 {
+.agglo__lille {
     opacity: 0.4;
     fill: #00ff00;
 }
-#path1 {
+.agglo__stomer {
     opacity: 0.4;
     fill: #800080;
 }
-#path4 {
+.agglo__calais {
     opacity: 0.4;
     fill: #00ffff;
 }
-#path2-0 {
+.agglo__boulogne {
     opacity: 0.4;
     fill: red;
 }
-#path3:hover {
-    opacity: 0.75;
-    stroke: black;
-}
-#path2-0:hover {
-    opacity: 0.75;
-    stroke: black;
-}
-#path4:hover {
-    opacity: 0.75;
-    stroke: black;
-}
-#path1:hover {
+.agglo:hover {
     opacity: 0.75;
     stroke: black;
 }
 
+.agglo--zoomed {
+    fill: #e1e1bc;
+    stroke: black;
+    /* opacity: 1; */
+    transition: fill 0.4s ease;
+}
 
-#marquise, #capelle,#desvres,#samer,#st-etienne,#portel,#outreau,#boulogne,#txt_boulogne {
+.agglo--zoomed:hover {
+    opacity: 0;
+}
+
+#marquise,
+#capelle,
+#desvres,
+#samer,
+#st-etienne,
+#portel,
+#outreau,
+#boulogne,
+#txt_boulogne {
     display: none;
 }
 /* The Modal (background) */

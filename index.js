@@ -1,6 +1,7 @@
 const lille = document.querySelector("#path3");
 const boulogne = document.querySelector("#path2-0");
-
+const calais = document.querySelector("#path4");
+const stomer = document.querySelector("#path1");
 lille.addEventListener("click", function () {
     console.log("lille");
 });
@@ -81,26 +82,7 @@ var zoom = (function () {
     document.addEventListener("keyup", function (event) {
         if (level !== 1 && event.keyCode === 27) {
             zoom.out({
-                callback: function(){
-                    let ville = [
-                        document.querySelector("#marquise"),
-                        document.querySelector("#capelle"),
-                        document.querySelector("#boulogne"),
-                        document.querySelector("#portel"),
-                        document.querySelector("#outreau"),
-                        document.querySelector("#samer"),
-                        document.querySelector("#desvres"),
-                        document.querySelector("#st-etienne"),
-                        document.querySelector("#txt_boulogne"),
-                    ];
-                    const point_boulogne = document.querySelector("#gros_boulogne");
-                    const txt_boulogne = document.querySelector("#gros_txt_boulogne");
-                    point_boulogne.style.display = "inline";
-                    txt_boulogne.style.display = "inline";
-                    ville.forEach((element) => {
-                        element.style.display = "none";
-                    });
-                }
+                callback: function () {},
             });
         }
     });
@@ -334,7 +316,7 @@ var zoom = (function () {
          * @param {Object} options
          *   - callback: call back when zooming out ends
          */
-        out: function (options) {
+        out: async function (options) {
             clearTimeout(panEngageTimeout);
             clearInterval(panUpdateInterval);
             clearTimeout(callbackTimeout);
@@ -344,7 +326,27 @@ var zoom = (function () {
             if (options && typeof options.callback === "function") {
                 setTimeout(options.callback, TRANSITION_DURATION);
             }
+            let ville = [
+                document.querySelector("#marquise"),
+                document.querySelector("#capelle"),
+                document.querySelector("#boulogne"),
+                document.querySelector("#portel"),
+                document.querySelector("#outreau"),
+                document.querySelector("#samer"),
+                document.querySelector("#desvres"),
+                document.querySelector("#st-etienne"),
+                document.querySelector("#txt_boulogne"),
+            ];
+            const point_boulogne = document.querySelector("#gros_boulogne");
+            const txt_boulogne = document.querySelector("#gros_txt_boulogne");
+            await unfade(point_boulogne);
+            await unfade(txt_boulogne);
+            boulogne.classList.remove("agglo--zoomed");
+            document.body.style.overflow = "visible";
 
+            ville.forEach((element) => {
+                fade(element);
+            });
             level = 1;
         },
 
@@ -363,9 +365,11 @@ var zoom = (function () {
 })();
 
 boulogne.addEventListener("click", function () {
+    document.body.style.overflow = "hidden";
+
     zoom.to({
         element: document.querySelector("#path2-0"),
-        callback: function () {
+        callback: async function () {
             let ville = [
                 document.querySelector("#marquise"),
                 document.querySelector("#capelle"),
@@ -379,11 +383,46 @@ boulogne.addEventListener("click", function () {
             ];
             const point_boulogne = document.querySelector("#gros_boulogne");
             const txt_boulogne = document.querySelector("#gros_txt_boulogne");
-            point_boulogne.style.display = "none";
-            txt_boulogne.style.display = "none";
+            await fade(point_boulogne);
+            await fade(txt_boulogne);
             ville.forEach((element) => {
-                element.style.display = "inline";
+                unfade(element);
             });
+            boulogne.classList.add("agglo--zoomed");
         },
+        pan: false,
     });
 });
+
+calais.addEventListener("click", function () {
+    zoom.to({
+        element: document.querySelector("#path4"),
+    });
+});
+
+async function fade(element) {
+    var op = 1; // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1) {
+            clearInterval(timer);
+            element.style.display = "none";
+        }
+        element.style.opacity = op;
+        element.style.filter = "alpha(opacity=" + op * 100 + ")";
+        console.log(element);
+        op -= op * 0.1;
+    }, 5);
+}
+
+async function unfade(element) {
+    var op = 0.1; // initial opacity
+    element.style.display = "block";
+    var timer = setInterval(function () {
+        if (op >= 1) {
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = "alpha(opacity=" + op * 100 + ")";
+        op += op * 0.1;
+    }, 5);
+}
