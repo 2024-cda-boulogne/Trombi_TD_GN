@@ -2,9 +2,7 @@ const lille = document.querySelector("#path3");
 const boulogne = document.querySelector("#path2-0");
 const calais = document.querySelector("#path4");
 const stomer = document.querySelector("#path1");
-lille.addEventListener("click", function () {
-    console.log("lille");
-});
+let agglo = [boulogne, calais, stomer, lille];
 
 // Get the modal
 const modal = document.getElementById("myModal");
@@ -391,12 +389,6 @@ boulogne.addEventListener("click", function () {
             boulogne.classList.add("agglo--zoomed");
         },
         pan: false,
-    });
-});
-
-calais.addEventListener("click", function () {
-    zoom.to({
-        element: document.querySelector("#path4"),
     });
 });
 

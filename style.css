@@ -30,6 +30,19 @@
     opacity: 0;
 }
 
+.agglo {
+    cursor: pointer;
+    animation: blink 0.6s 2 ease;
+}
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.75;
+    }
+}
+
 #marquise,
 #capelle,
 #desvres,
