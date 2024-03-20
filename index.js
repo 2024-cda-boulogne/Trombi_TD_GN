@@ -393,7 +393,6 @@ async function fade(element) {
         }
         element.style.opacity = op;
         element.style.filter = "alpha(opacity=" + op * 100 + ")";
-        console.log(element);
         op -= op * 0.1;
     }, 5);
 }
@@ -421,8 +420,8 @@ fetch("data.json").then(function (response) {
 
 function generateCards(agglo, nomville, index) {
     const cardContainer = document.querySelector(".card-container");
+    cardContainer.innerHTML = "";
     agglos[agglo][index][nomville].forEach((data, index) => {
-        cardContainer.innerHTML = "";
         console.log(data);
         const cardDiv = document.createElement("div");
         const cardId = "card-" + index;
@@ -525,32 +524,80 @@ function generateCards(agglo, nomville, index) {
         buttons.forEach((btn) => {
             btn.addEventListener("click", handleButtonClick);
         });
-        console.log("end");
     });
 }
 
 const marquise = document.querySelector("#marquise");
+const capelle = document.querySelector("#capelle");
+const boulogneville = document.querySelector("#boulogne");
+const outreau = document.querySelector("#outreau");
+const samer = document.querySelector("#samer");
+const desvres = document.querySelector("#desvres");
+const stetienne = document.querySelector("#st-etienne");
 
 marquise.addEventListener("click", function () {
-    console.log("click");
     generateCards("boulogne", "Marquise", 1);
+    zoom.reset();
     modal.style.display = "block";
     container.style.filter = "blur(1rem)";
-    // Créer un nouvel événement de type "keydown"
-    var event = new KeyboardEvent("keydown", {
-        key: "a", // Touche à simuler (dans cet exemple, la touche "A")
-        keyCode: 65, // Code de touche correspondant à "A"
-        which: 65, // Code de touche correspondant à "A"
-        code: "KeyA", // Code de touche standard
-        location: 0, // Position de la touche sur le clavier
-        ctrlKey: false, // Touche Ctrl enfoncée ou non
-        shiftKey: false, // Touche Maj enfoncée ou non
-        altKey: false, // Touche Alt enfoncée ou non
-        metaKey: false, // Touche Méta enfoncée ou non
-        repeat: false, // L'événement est-il un répétition d'une touche enfoncée
-        isComposing: false, // Indique si l'événement est composé
-    });
+});
 
-    // Dispatch l'événement créé sur le document
-    document.dispatchEvent(event);
+capelle.addEventListener("click", function () {
+    generateCards("boulogne", "Capelle", 3);
+    zoom.reset();
+    modal.style.display = "block";
+    container.style.filter = "blur(1rem)";
+});
+
+boulogneville.addEventListener("click", function () {
+    generateCards("boulogne", "Boulogne", 0);
+    zoom.reset();
+    modal.style.display = "block";
+    container.style.filter = "blur(1rem)";
+});
+
+outreau.addEventListener("click", function () {
+    generateCards("boulogne", "Outreau", 4);
+    zoom.reset();
+    modal.style.display = "block";
+    container.style.filter = "blur(1rem)";
+});
+
+samer.addEventListener("click", function () {
+    generateCards("boulogne", "Samer", 6);
+    zoom.reset();
+    modal.style.display = "block";
+    container.style.filter = "blur(1rem)";
+});
+
+desvres.addEventListener("click", function () {
+    generateCards("boulogne", "Desvres", 5);
+    zoom.reset();
+    modal.style.display = "block";
+    container.style.filter = "blur(1rem)";
+});
+
+stetienne.addEventListener("click", function () {
+    generateCards("boulogne", "StEtienneAuMont", 2);
+    zoom.reset();
+    modal.style.display = "block";
+    container.style.filter = "blur(1rem)";
+});
+
+stomer.addEventListener("click", function () {
+    generateCards("stomer", "Ecques", 0);
+    modal.style.display = "block";
+    container.style.filter = "blur(1rem)";
+});
+
+lille.addEventListener("click", function () {
+    generateCards("lille", "SaintAndreLezLille", 0);
+    modal.style.display = "block";
+    container.style.filter = "blur(1rem)";
+});
+
+calais.addEventListener("click", function () {
+    generateCards("calais", "Calais", 0);
+    modal.style.display = "block";
+    container.style.filter = "blur(1rem)";
 });
