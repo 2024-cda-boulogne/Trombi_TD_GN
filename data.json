@@ -28,10 +28,7 @@
                     ],
                     "stacks": [
                         {
-                            "stack": [
-                                "image/8080react.png",
-                                "image/node.png"
-                            ]
+                            "stack": ["image/8080react.png", "image/node.png"]
                         }
                     ],
 
@@ -70,11 +67,7 @@
 
                     "stacks": [
                         {
-                            "stack": [
-                                "image/8080react.png",
-                                "image/symfo.png"
-                                
-                            ]
+                            "stack": ["image/8080react.png", "image/symfo.png"]
                         }
                     ],
                     "contact": {
@@ -111,14 +104,10 @@
                     ],
                     "stacks": [
                         {
-                            "stack": [
-                                "image/symfo.png"
-
-                                
-                            ]
+                            "stack": ["image/symfo.png"]
                         }
                     ],
-                    
+
                     "contact": {
                         "location": "Boulogne",
                         "phone": "",
@@ -157,10 +146,7 @@
                     ],
                     "stacks": [
                         {
-                            "stack": [
-                                "image/8080react.png",
-                                "image/symfo.png"
-                            ]
+                            "stack": ["image/8080react.png", "image/symfo.png"]
                         }
                     ],
                     "contact": {
@@ -254,7 +240,6 @@
                                 "image/node.png",
                                 "image/express.png",
                                 "image/typescript.png"
-                                
                             ]
                         }
                     ],
@@ -298,11 +283,7 @@
 
                     "stacks": [
                         {
-                            "stack": [
-                                "image/8080react.png",
-                                "image/symfo.png"
-                                
-                            ]
+                            "stack": ["image/8080react.png", "image/symfo.png"]
                         }
                     ],
 
@@ -341,10 +322,7 @@
 
                     "stacks": [
                         {
-                            "stack": [
-                                "image/8080react.png"
-                                
-                            ]
+                            "stack": ["image/8080react.png"]
                         }
                     ],
 
@@ -387,11 +365,7 @@
 
                     "stacks": [
                         {
-                            "stack": [
-                                "image/iangu.png",
-                                "image/symfo.png"
-                                
-                            ]
+                            "stack": ["image/iangu.png", "image/symfo.png"]
                         }
                     ],
 
@@ -429,6 +403,11 @@
                             "year": "2024",
                             "title": "Formation Simplon CDA",
                             "desc": "Concepteur développeur d'applications"
+                        }
+                    ],
+                    "stacks": [
+                        {
+                            "stack": ["image/iangu.png", "image/symfo.png"]
                         }
                     ],
                     "contact": {
@@ -469,6 +448,16 @@
                             "desc": "Concepteur développeur d'applications"
                         }
                     ],
+                    "stacks": [
+                        {
+                            "stack": [
+                                "image/8080react.png",
+                                "image/iangu.png",
+                                "image/net.png",
+                                "image/Csharp.png"
+                            ]
+                        }
+                    ],
                     "contact": {
                         "location": "Saint André lez Lille",
                         "phone": "",
@@ -477,27 +466,7 @@
                         "github": "https://github.com/Merlinovitch"
                     }
                 }
-            ],
-
-            "stacks": [
-                {
-                    "stack": [
-                        "image/8080react.png",
-                        "image/iangu.png",
-                        "image/net.png",
-                        "image/Csharp.png"
-                        
-                    ]
-                }
-            ],
-
-            "contact": {
-                "location": "Saint André lez Lille",
-                "phone": "",
-                "email": "",
-                "linkedin": "https://www.linkedin.com/in/alexandre-merlin-82a395a8/",
-                "github": "https://github.com/Merlinovitch"
-            }
+            ]
         },
         {
             "name": "Nicolas Herbez",
@@ -526,10 +495,7 @@
 
             "stacks": [
                 {
-                    "stack": [
-                        "image/8080react.png"
-                        
-                    ]
+                    "stack": ["image/8080react.png"]
                 }
             ],
 
@@ -569,6 +535,16 @@
                             "desc": "Concepteur développeur d'applications"
                         }
                     ],
+                    "stacks": [
+                        {
+                            "stack": [
+                                "image/8080react.png",
+                                "image/express.png",
+                                "image/node.png",
+                                "image/next.js.png"
+                            ]
+                        }
+                    ],
                     "contact": {
                         "location": "Ecques",
                         "phone": "",
@@ -577,27 +553,7 @@
                         "github": "https://github.com/jblavisse"
                     }
                 }
-            ],
-
-            "stacks": [
-                {
-                    "stack": [
-                        "image/8080react.png",
-                        "image/express.png",
-                        "image/node.png",
-                        "image/next.js.png"
-                        
-                    ]
-                }
-            ],
-
-            "contact": {
-                "location": "Ecques",
-                "phone": "",
-                "email": "",
-                "linkedin": "https://www.linkedin.com/in/jblavisse",
-                "github": "https://github.com/jblavisse"
-            }
+            ]
         }
     ],
     "calais": [
@@ -633,15 +589,11 @@
                         "email": "",
                         "linkedin": "https://www.linkedin.com/in/barsby-laurie-62100/",
                         "github": ""
-                    }
-                }
-            ],
-
-            "stacks": [
-                {
-                    "stack": [
-                        "image/8080react.png",
-                        "image/poste.png"
+                    },
+                    "stacks": [
+                        {
+                            "stack": ["image/8080react.png", "image/poste.png"]
+                        }
                     ]
                 }
             ],

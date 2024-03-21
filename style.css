@@ -567,6 +567,17 @@ body {
     background-color: dodgerblue;
     color: white;
 }
+.stacks img{
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+  }
+  
+  .stacks{
+    display: inline;
+    padding: 5px;
+  }
+
 #svg2 {
     width: 946.41083px;
     height: 603.75366px;
