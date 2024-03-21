@@ -334,7 +334,6 @@ var zoom = (function () {
                 document.querySelector("#marquise"),
                 document.querySelector("#capelle"),
                 document.querySelector("#boulogne"),
-                document.querySelector("#portel"),
                 document.querySelector("#outreau"),
                 document.querySelector("#samer"),
                 document.querySelector("#desvres"),
@@ -561,6 +560,7 @@ samer.addEventListener("click", function () {
 
 desvres.addEventListener("click", function () {
     generateCards("boulogne", "Desvres", 5);
+
     zoom.reset();
     modal.style.display = "block";
     container.style.filter = "blur(1rem)";
