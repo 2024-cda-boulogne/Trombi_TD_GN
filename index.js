@@ -1,7 +1,6 @@
 let agglos;
 fetch("data.json").then(function (response) {
     response.json().then(function (json) {
-        console.log(json);
         agglos = json;
     });
 });
@@ -16,7 +15,6 @@ let agglo = [boulogne, calais, stomer, lille];
 const modal = document.getElementById("myModal");
 const container = document.querySelector(".container");
 // Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 
@@ -29,7 +27,17 @@ window.onclick = function (event) {
         container.style.filter = "blur(0rem)";
     }
 };
+function fermerModal() {
+    modal.style.display = "none";
+    container.style.filter = "blur(0rem)";
+}
 
+// Écoute de l'événement de pression de touche
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        fermerModal();
+    }
+});
 /*!
  * zoom.js 0.3
  * http://lab.hakim.se/zoom-js
@@ -328,7 +336,6 @@ var zoom = (function () {
                 document.querySelector("#marquise"),
                 document.querySelector("#capelle"),
                 document.querySelector("#boulogne"),
-                document.querySelector("#portel"),
                 document.querySelector("#outreau"),
                 document.querySelector("#samer"),
                 document.querySelector("#desvres"),
@@ -372,7 +379,6 @@ boulogne.addEventListener("click", function () {
                 document.querySelector("#marquise"),
                 document.querySelector("#capelle"),
                 document.querySelector("#boulogne"),
-                document.querySelector("#portel"),
                 document.querySelector("#outreau"),
                 document.querySelector("#samer"),
                 document.querySelector("#desvres"),
@@ -392,39 +398,10 @@ boulogne.addEventListener("click", function () {
     });
 });
 
-async function fade(element) {
-    var op = 1; // initial opacity
-    var timer = setInterval(function () {
-        if (op <= 0.1) {
-            clearInterval(timer);
-            element.style.display = "none";
-        }
-        element.style.opacity = op;
-        element.style.filter = "alpha(opacity=" + op * 100 + ")";
-        op -= op * 0.1;
-    }, 5);
-}
-
-async function unfade(element) {
-    var op = 0.1; // initial opacity
-    element.style.display = "block";
-    var timer = setInterval(function () {
-        if (op >= 1) {
-            clearInterval(timer);
-        }
-        element.style.opacity = op;
-        element.style.filter = "alpha(opacity=" + op * 100 + ")";
-        op += op * 0.1;
-    }, 5);
-}
-
-
-
 function generateCards(agglo, nomville, index) {
     const cardContainer = document.querySelector(".card-container");
     cardContainer.innerHTML = "";
     agglos[agglo][index][nomville].forEach((data, index) => {
-        console.log(data);
         const cardDiv = document.createElement("div");
         const cardId = "card-" + index;
         cardDiv.id = cardId;
@@ -603,3 +580,97 @@ calais.addEventListener("click", function () {
     modal.style.display = "block";
     container.style.filter = "blur(1rem)";
 });
+
+marquise.addEventListener("mouseover", function () {
+    const texte = document.querySelector(".text_marquise");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+capelle.addEventListener("mouseover", function () {
+    const texte = document.querySelector(".text_capelle");
+    texte.classList.toggle("display-cities-name");
+});
+
+outreau.addEventListener("mouseover", function () {
+    const texte = document.querySelector(".text-outreau");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+samer.addEventListener("mouseover", function () {
+    const texte = document.querySelector(".text-samer");
+    texte.classList.toggle("display-cities-name");
+});
+
+desvres.addEventListener("mouseover", function () {
+    const texte = document.querySelector(".text-desvres");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+stetienne.addEventListener("mouseover", function () {
+    const texte = document.querySelector(".text-stetienne");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+marquise.addEventListener("mouseout", function () {
+    const texte = document.querySelector(".text_marquise");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+capelle.addEventListener("mouseout", function () {
+    const texte = document.querySelector(".text_capelle");
+    texte.classList.toggle("display-cities-name");
+});
+
+outreau.addEventListener("mouseout", function () {
+    const texte = document.querySelector(".text-outreau");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+samer.addEventListener("mouseout", function () {
+    const texte = document.querySelector(".text-samer");
+    texte.classList.toggle("display-cities-name");
+});
+
+desvres.addEventListener("mouseout", function () {
+    const texte = document.querySelector(".text-desvres");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+stetienne.addEventListener("mouseout", function () {
+    const texte = document.querySelector(".text-stetienne");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+async function fade(element) {
+    var op = 1; // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1) {
+            clearInterval(timer);
+            element.style.display = "none";
+        }
+        element.style.opacity = op;
+        element.style.filter = "alpha(opacity=" + op * 100 + ")";
+        op -= op * 0.1;
+    }, 5);
+}
+
+async function unfade(element) {
+    var op = 0.1; // initial opacity
+    element.style.display = "block";
+    var timer = setInterval(function () {
+        if (op >= 1) {
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = "alpha(opacity=" + op * 100 + ")";
+        op += op * 0.1;
+    }, 5);
+}
