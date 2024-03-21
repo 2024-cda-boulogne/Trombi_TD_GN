@@ -500,3 +500,14 @@ body {
   font-family: "Jost", sans-serif;
   transition: 0.3s;
 }
+
+.stacks img{
+  height: 60px;
+  width: 60px;
+  padding: 5px;
+}
+
+.stacks{
+  display: inline;
+  padding: 5px;
+}
