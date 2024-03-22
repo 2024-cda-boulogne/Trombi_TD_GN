@@ -1,7 +1,6 @@
 let agglos;
 fetch("data.json").then(function (response) {
     response.json().then(function (json) {
-        console.log(json);
         agglos = json;
     });
 });
@@ -16,7 +15,6 @@ let agglo = [boulogne, calais, stomer, lille];
 const modal = document.getElementById("myModal");
 const container = document.querySelector(".container");
 // Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 
@@ -29,7 +27,17 @@ window.onclick = function (event) {
         container.style.filter = "blur(0rem)";
     }
 };
+function fermerModal() {
+    modal.style.display = "none";
+    container.style.filter = "blur(0rem)";
+}
 
+// Écoute de l'événement de pression de touche
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+        fermerModal();
+    }
+});
 /*!
  * zoom.js 0.3
  * http://lab.hakim.se/zoom-js
@@ -79,9 +87,7 @@ var zoom = (function () {
     // Zoom out if the user hits escape
     document.addEventListener("keyup", function (event) {
         if (level !== 1 && event.keyCode === 27) {
-            zoom.out({
-                callback: function () {},
-            });
+            zoom.out();
         }
     });
 
@@ -314,7 +320,7 @@ var zoom = (function () {
          * @param {Object} options
          *   - callback: call back when zooming out ends
          */
-        out: async function (options) {
+        out: function (options) {
             clearTimeout(panEngageTimeout);
             clearInterval(panUpdateInterval);
             clearTimeout(callbackTimeout);
@@ -337,8 +343,9 @@ var zoom = (function () {
             ];
             const point_boulogne = document.querySelector("#gros_boulogne");
             const txt_boulogne = document.querySelector("#gros_txt_boulogne");
-            await unfade(point_boulogne);
-            await unfade(txt_boulogne);
+            unfade(point_boulogne);
+
+            unfade(txt_boulogne);
             boulogne.classList.remove("agglo--zoomed");
             document.body.style.overflow = "visible";
 
@@ -364,7 +371,6 @@ var zoom = (function () {
 
 boulogne.addEventListener("click", function () {
     document.body.style.overflow = "hidden";
-
     zoom.to({
         element: document.querySelector("#path2-0"),
         callback: async function () {
@@ -372,7 +378,6 @@ boulogne.addEventListener("click", function () {
                 document.querySelector("#marquise"),
                 document.querySelector("#capelle"),
                 document.querySelector("#boulogne"),
-                document.querySelector("#portel"),
                 document.querySelector("#outreau"),
                 document.querySelector("#samer"),
                 document.querySelector("#desvres"),
@@ -392,39 +397,10 @@ boulogne.addEventListener("click", function () {
     });
 });
 
-async function fade(element) {
-    var op = 1; // initial opacity
-    var timer = setInterval(function () {
-        if (op <= 0.1) {
-            clearInterval(timer);
-            element.style.display = "none";
-        }
-        element.style.opacity = op;
-        element.style.filter = "alpha(opacity=" + op * 100 + ")";
-        op -= op * 0.1;
-    }, 5);
-}
-
-async function unfade(element) {
-    var op = 0.1; // initial opacity
-    element.style.display = "block";
-    var timer = setInterval(function () {
-        if (op >= 1) {
-            clearInterval(timer);
-        }
-        element.style.opacity = op;
-        element.style.filter = "alpha(opacity=" + op * 100 + ")";
-        op += op * 0.1;
-    }, 5);
-}
-
-
-
 function generateCards(agglo, nomville, index) {
     const cardContainer = document.querySelector(".card-container");
     cardContainer.innerHTML = "";
     agglos[agglo][index][nomville].forEach((data, index) => {
-        console.log(data);
         const cardDiv = document.createElement("div");
         const cardId = "card-" + index;
         cardDiv.id = cardId;
@@ -453,6 +429,7 @@ function generateCards(agglo, nomville, index) {
 			  </div>
 			  <div class="card-section" id="experience">
 				<div class="card-content">
+                
 				  <div class="card-subtitle">EXPERIENCE DE DEVELOPPEMENT</div>
 				  <div class="card-timeline">
 					${data.experiences
@@ -468,8 +445,18 @@ function generateCards(agglo, nomville, index) {
                         .join("")}
 					</div>
 					<div class="card-subtitle">Stacks</div>
+                    <div class="stacks">     
+                    ${(() => {
+                        let imagesHTML = "";
+                        data.stacks[0].stack.forEach((stack) => {
+                            imagesHTML += `<img src="${stack}" />`;
+                        });
+                        return imagesHTML;
+                    })()} 
+                    </div>   
 				</div>
 			  </div>
+
 			  <div class="card-section" id="contact">
 				<div class="card-content">
 				<div class="card-subtitle">CONTACT ET INFORMATIONS</div>
@@ -603,3 +590,97 @@ calais.addEventListener("click", function () {
     modal.style.display = "block";
     container.style.filter = "blur(1rem)";
 });
+
+marquise.addEventListener("mouseover", function () {
+    const texte = document.querySelector(".text_marquise");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+capelle.addEventListener("mouseover", function () {
+    const texte = document.querySelector(".text_capelle");
+    texte.classList.toggle("display-cities-name");
+});
+
+outreau.addEventListener("mouseover", function () {
+    const texte = document.querySelector(".text-outreau");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+samer.addEventListener("mouseover", function () {
+    const texte = document.querySelector(".text-samer");
+    texte.classList.toggle("display-cities-name");
+});
+
+desvres.addEventListener("mouseover", function () {
+    const texte = document.querySelector(".text-desvres");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+stetienne.addEventListener("mouseover", function () {
+    const texte = document.querySelector(".text-stetienne");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+marquise.addEventListener("mouseout", function () {
+    const texte = document.querySelector(".text_marquise");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+capelle.addEventListener("mouseout", function () {
+    const texte = document.querySelector(".text_capelle");
+    texte.classList.toggle("display-cities-name");
+});
+
+outreau.addEventListener("mouseout", function () {
+    const texte = document.querySelector(".text-outreau");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+samer.addEventListener("mouseout", function () {
+    const texte = document.querySelector(".text-samer");
+    texte.classList.toggle("display-cities-name");
+});
+
+desvres.addEventListener("mouseout", function () {
+    const texte = document.querySelector(".text-desvres");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+stetienne.addEventListener("mouseout", function () {
+    const texte = document.querySelector(".text-stetienne");
+
+    texte.classList.toggle("display-cities-name");
+});
+
+async function fade(element) {
+    var op = 1; // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1) {
+            clearInterval(timer);
+            element.style.display = "none";
+        }
+        element.style.opacity = op;
+        element.style.filter = "alpha(opacity=" + op * 100 + ")";
+        op -= op * 0.1;
+    }, 5);
+}
+
+async function unfade(element) {
+    var op = 0.1; // initial opacity
+    element.style.display = "block";
+    var timer = setInterval(function () {
+        if (op >= 1) {
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = "alpha(opacity=" + op * 100 + ")";
+        op += op * 0.1;
+    }, 5);
+}

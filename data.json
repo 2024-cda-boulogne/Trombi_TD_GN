@@ -26,6 +26,12 @@
                             "desc": "Concepteur développeur d'applications"
                         }
                     ],
+                    "stacks": [
+                        {
+                            "stack": ["image/8080react.png", "image/node.png"]
+                        }
+                    ],
+
                     "contact": {
                         "location": "Boulogne",
                         "phone": "06 84 73 28 19",
@@ -56,6 +62,12 @@
                             "year": "2024",
                             "title": "Formation Simplon CDA",
                             "desc": "Concepteur développeur d'applications"
+                        }
+                    ],
+
+                    "stacks": [
+                        {
+                            "stack": ["image/8080react.png", "image/symfo.png"]
                         }
                     ],
                     "contact": {
@@ -90,6 +102,12 @@
                             "desc": "Concepteur développeur d'applications"
                         }
                     ],
+                    "stacks": [
+                        {
+                            "stack": ["image/symfo.png"]
+                        }
+                    ],
+
                     "contact": {
                         "location": "Boulogne",
                         "phone": "",
@@ -128,11 +146,7 @@
                     ],
                     "stacks": [
                         {
-                            "images": [
-                                "image/stack1.jpg",
-                                "image/stack2.jpg",
-                                "image/stack3.jpg"
-                            ]
+                            "stack": ["image/8080react.png", "image/symfo.png"]
                         }
                     ],
                     "contact": {
@@ -171,6 +185,17 @@
                             "desc": "Concepteur développeur d'applications"
                         }
                     ],
+
+                    "stacks": [
+                        {
+                            "stack": [
+                                "image/iangu.png",
+                                "image/ijava.png",
+                                "image/net.png"
+                            ]
+                        }
+                    ],
+
                     "contact": {
                         "location": "Saint Etienne au Mont",
                         "phone": "",
@@ -207,6 +232,18 @@
                             "desc": "Concepteur développeur d'applications"
                         }
                     ],
+
+                    "stacks": [
+                        {
+                            "stack": [
+                                "image/next.js.png",
+                                "image/node.png",
+                                "image/express.png",
+                                "image/typescript.png"
+                            ]
+                        }
+                    ],
+
                     "contact": {
                         "location": "la capelle les boulogne",
                         "phone": "",
@@ -243,6 +280,13 @@
                             "desc": "Concepteur développeur d'applications"
                         }
                     ],
+
+                    "stacks": [
+                        {
+                            "stack": ["image/8080react.png", "image/symfo.png"]
+                        }
+                    ],
+
                     "contact": {
                         "location": "Outreau",
                         "phone": "",
@@ -275,6 +319,13 @@
                             "desc": "Concepteur développeur d'applications"
                         }
                     ],
+
+                    "stacks": [
+                        {
+                            "stack": ["image/8080react.png"]
+                        }
+                    ],
+
                     "contact": {
                         "location": "Outreau",
                         "phone": "06 24 09 57 24",
@@ -311,6 +362,13 @@
                             "desc": "Concepteur développeur d'applications"
                         }
                     ],
+
+                    "stacks": [
+                        {
+                            "stack": ["image/iangu.png", "image/symfo.png"]
+                        }
+                    ],
+
                     "contact": {
                         "location": "Desvres",
                         "phone": "",
@@ -345,6 +403,11 @@
                             "year": "2024",
                             "title": "Formation Simplon CDA",
                             "desc": "Concepteur développeur d'applications"
+                        }
+                    ],
+                    "stacks": [
+                        {
+                            "stack": ["image/iangu.png", "image/symfo.png"]
                         }
                     ],
                     "contact": {
@@ -385,6 +448,16 @@
                             "desc": "Concepteur développeur d'applications"
                         }
                     ],
+                    "stacks": [
+                        {
+                            "stack": [
+                                "image/8080react.png",
+                                "image/iangu.png",
+                                "image/net.png",
+                                "image/Csharp.png"
+                            ]
+                        }
+                    ],
                     "contact": {
                         "location": "Saint André lez Lille",
                         "phone": "",
@@ -394,6 +467,45 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "Nicolas Herbez",
+            "jobTitle": "Apprenti CDA",
+            "age": "25 ans",
+            "image": "image/nicoh.jpg",
+            "about": "Bonjour je suis Nicolas Herbez et je suis un apprenti CDA",
+            "hobbies": "",
+            "experiences": [
+                {
+                    "year": "2023",
+                    "title": "Formation Simplon",
+                    "desc": "Développeur intégrateur"
+                },
+                {
+                    "year": "2023",
+                    "title": "Formation Simplon dwwm",
+                    "desc": "Développeur Web et Web Mobile"
+                },
+                {
+                    "year": "2024",
+                    "title": "Formation Simplon CDA",
+                    "desc": "Concepteur développeur d'applications"
+                }
+            ],
+
+            "stacks": [
+                {
+                    "stack": ["image/8080react.png"]
+                }
+            ],
+
+            "contact": {
+                "location": "Samer",
+                "phone": "",
+                "email": "",
+                "linkedin": "",
+                "github": ""
+            }
         }
     ],
     "stomer": [
@@ -421,6 +533,16 @@
                             "year": "2024",
                             "title": "Formation Simplon CDA",
                             "desc": "Concepteur développeur d'applications"
+                        }
+                    ],
+                    "stacks": [
+                        {
+                            "stack": [
+                                "image/8080react.png",
+                                "image/express.png",
+                                "image/node.png",
+                                "image/next.js.png"
+                            ]
                         }
                     ],
                     "contact": {
@@ -467,9 +589,22 @@
                         "email": "",
                         "linkedin": "https://www.linkedin.com/in/barsby-laurie-62100/",
                         "github": ""
-                    }
+                    },
+                    "stacks": [
+                        {
+                            "stack": ["image/8080react.png", "image/poste.png"]
+                        }
+                    ]
                 }
-            ]
+            ],
+
+            "contact": {
+                "location": "Calais",
+                "phone": "",
+                "email": "",
+                "linkedin": "https://www.linkedin.com/in/barsby-laurie-62100/",
+                "github": ""
+            }
         }
     ]
 }
