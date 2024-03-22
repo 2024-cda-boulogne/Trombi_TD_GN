@@ -7,7 +7,7 @@
                     "jobTitle": "Apprenti CDA",
                     "age": "20 ans",
                     "image": "image/alexbuffet.webp",
-                    "about": "L'amour gagne toujours a la fin",
+                    "about": "Bonjour je suis Alex Buffet et je suis un apprenti CDA, l'amour gagne toujours à la fin n'oubliez pas",
                     "hobbies": "jeux videos, la poésie",
                     "experiences": [
                         {
@@ -34,8 +34,8 @@
 
                     "contact": {
                         "location": "Boulogne",
-                        "phone": "06 84 73 28 19",
-                        "email": "alex.buffet7839@gmailcom",
+                        "phone": "",
+                        "email": "",
                         "linkedin": "https://www.linkedin.com/in/alex-b-945997271/",
                         "github": "https://github.com/JunkBezoul "
                     }
@@ -45,18 +45,18 @@
                     "jobTitle": "Apprenti CDA",
                     "age": "20 ans",
                     "image": "image/will.jpg",
-                    "about": "Bonjour je suis William Truant et je suis un apprenti CDA",
-                    "hobbies": "Jeu vidéo",
+                    "about": "Bonjour je suis William Truant et je suis développeur web Freelance",
+                    "hobbies": "Dévelopement Web & Jeux Vidéos",
                     "experiences": [
                         {
-                            "year": "2023",
-                            "title": "Formation Simplon",
-                            "desc": "Développeur intégrateur"
+                            "year": "2022",
+                            "title": "Formation M2i",
+                            "desc": "Développeur Web et Web Mobile"
                         },
                         {
                             "year": "2023",
-                            "title": "Formation Simplon dwwm",
-                            "desc": "Développeur Web et Web Mobile"
+                            "title": "Formation Simplon",
+                            "desc": "Apple Foundation Program"
                         },
                         {
                             "year": "2024",
@@ -67,7 +67,11 @@
 
                     "stacks": [
                         {
-                            "stack": ["image/8080react.png"]
+                            "stack": [
+                                "image/8080react.png",
+                                "image/laravel.png",
+                                "image/next.js.png"
+                            ]
                         }
                     ],
                     "contact": {
@@ -83,18 +87,18 @@
                     "jobTitle": "Apprenti CDA",
                     "age": "38 ans",
                     "image": "image/vivien.jpg",
-                    "about": "Bonjour je suis Vivien Gajac et je suis un apprenti CDA",
+                    "about": "'Le code c'est le code.' Kaamelott.",
                     "hobbies": "Jeux vidéos, Guitare, Lever de coude",
                     "experiences": [
                         {
                             "year": "2023",
-                            "title": "Formation Simplon",
-                            "desc": "Développeur intégrateur"
+                            "title": "Développeur JS",
+                            "desc": "Jeu de Tower Defense"
                         },
                         {
-                            "year": "2023",
-                            "title": "Formation Simplon dwwm",
-                            "desc": "Développeur Web et Web Mobile"
+                            "year": "2024",
+                            "title": "Développeur Symfony",
+                            "desc": "Application Repair Café Outreau"
                         },
                         {
                             "year": "2024",
@@ -104,7 +108,7 @@
                     ],
                     "stacks": [
                         {
-                            "stack": ["image/8080react.png"]
+                            "stack": ["image/8080react.png", "image/php.png", "image/js.png", "image/symfo.png"]
                         }
                     ],
 
@@ -151,8 +155,8 @@
                     ],
                     "contact": {
                         "location": "Marquise",
-                        "phone": "07 69 94 20 83",
-                        "email": "geoffrey.noel08@gmail.com",
+                        "phone": "",
+                        "email": "",
                         "linkedin": "https://www.linkedin.com/in/geoffrey-noel-093683269/",
                         "github": "https://github.com/Geoffrey184"
                     }
@@ -170,14 +174,14 @@
                     "hobbies": "videos games, cinema, animé",
                     "experiences": [
                         {
-                            "year": "2023",
-                            "title": "Formation Simplon",
-                            "desc": "Développeur intégrateur"
+                            "year": "2021",
+                            "title": "Dut Informatique",
+                            "desc": "Diplome Universitaire Technologique" 
                         },
                         {
                             "year": "2023",
-                            "title": "Formation Simplon dwwm",
-                            "desc": "Développeur Web et Web Mobile"
+                            "title": "Formation Simplon .Net",
+                            "desc": "Bootcamp .Net et C# back-end"
                         },
                         {
                             "year": "2024",
@@ -191,7 +195,8 @@
                             "stack": [
                                 "image/iangu.png",
                                 "image/ijava.png",
-                                "image/net.png"
+                                "image/net.png",
+                                "image/Csharp.png"
                             ]
                         }
                     ],
@@ -261,7 +266,7 @@
                     "jobTitle": "Apprenti CDA",
                     "age": "23 ans",
                     "image": "image/karl.webp",
-                    "about": "Bonjour je suis Karl Gavois et je suis un apprenti CDA",
+                    "about": "Vieux de 23 ans en apprentissage",
                     "hobbies": "Jeu vidéal / Formule 1 ",
                     "experiences": [
                         {
@@ -300,8 +305,8 @@
                     "jobTitle": "Apprenti CDA",
                     "age": "28 ans",
                     "image": "image/eric.png",
-                    "about": "On ne repousse pas ses limites, on les découvre.",
-                    "hobbies": "Jeu vidéo",
+                    "about": "Ambitieux et patient",
+                    "hobbies": "Musique & Jeu vidéo",
                     "experiences": [
                         {
                             "year": "2023",
@@ -328,8 +333,8 @@
 
                     "contact": {
                         "location": "Outreau",
-                        "phone": "06 24 09 57 24",
-                        "email": "dasilvarochaeric@gmail.com",
+                        "phone": "",
+                        "email": "",
                         "linkedin": "https://www.linkedin.com/in/eric-da-silva-rocha/",
                         "github": "https://github.com/Ericdsr"
                     }
@@ -343,7 +348,7 @@
                     "jobTitle": "Apprenti CDA",
                     "age": "35 ans",
                     "image": "image/kevinledez.jpg",
-                    "about": "Bonjour je suis Kévin LEDEZ et je suis un apprenti CDA",
+                    "about": "Jeune de 35 ans en reconversion professionnel.",
                     "hobbies": "Jeux, Programmation, Musique",
                     "experiences": [
                         {
@@ -384,34 +389,34 @@
                 {
                     "name": "Nicolas Herbez",
                     "jobTitle": "Apprenti CDA",
-                    "age": "25 ans",
+                    "age": "43 ans",
                     "image": "image/nicoh.jpg",
-                    "about": "Bonjour je suis Nicolas Herbez et je suis un apprenti CDA",
-                    "hobbies": "",
+                    "about": "C'est donner l'envie d'apprendre qui m'anime.",
+                    "hobbies": "famille, code, game, mes apprenant(e)s ;)",
                     "experiences": [
                         {
                             "year": "2023",
+                            "title": "Formation indépendant",
+                            "desc": "DEV INT, DWWM, CDA, CDA alt Devops"
+                        },
+                        {
+                            "year": "2019",
                             "title": "Formation Simplon",
-                            "desc": "Développeur intégrateur"
+                            "desc": "DEV INT, SP Front-end, DWWM, CDA"
                         },
                         {
-                            "year": "2023",
-                            "title": "Formation Simplon dwwm",
-                            "desc": "Développeur Web et Web Mobile"
-                        },
-                        {
-                            "year": "2024",
-                            "title": "Formation Simplon CDA",
-                            "desc": "Concepteur développeur d'applications"
+                            "year": "2006",
+                            "title": "Technicien",
+                            "desc": "Réparation TV, mobiles"
                         }
                     ],
-        
+
                     "stacks": [
                         {
-                            "stack": ["image/8080react.png"]
+                            "stack": ["image/8080react.png","image/iangu.png","image/docker.png", "image/api_platforme.png"]
                         }
                     ],
-        
+
                     "contact": {
                         "location": "Samer",
                         "phone": "",
@@ -425,43 +430,55 @@
     ],
     "lille": [
         {
-            "SaintAndreLezLille":[
+            "SaintAndreLezLille": [
                 {
                     "name": "Alexandre Merlin",
                     "jobTitle": "Apprenti CDA",
                     "age": "31 ans",
                     "image": "image/Merlin_Alexandre.webp",
-                    "about": "Bonjour je suis Alexandre Merlin et je suis un apprenti CDA",
-                    "hobbies": " jeux vidéos, peinture",
+                    "about": "Programmeur : Une machine qui transforme le café en code.",
+                    "hobbies": " Jeux vidéo, Guitare, Peinture",
                     "experiences": [
-                        {
-                            "year": "2023",
-                            "title": "Formation Simplon",
-                            "desc": "Développeur intégrateur"
-                        },
-                        {
-                            "year": "2023",
-                            "title": "Formation Simplon dwwm",
-                            "desc": "Développeur Web et Web Mobile"
-                        },
                         {
                             "year": "2024",
                             "title": "Formation Simplon CDA",
                             "desc": "Concepteur développeur d'applications"
+                        },
+                        {
+                            "year": "2024",
+                            "title": "Développeur Fullstack .NET/React",
+                            "desc": "stage d'un mois chez LD Technology"
+                        },
+                   
+                        {
+                            "year": "2024",
+                            "title": "Formation Simplon Back End",
+                            "desc": "Spécialisation C# .NET"
+                        },
+                        {
+                            "year": "2023",
+                            "title": "Développeur Front Angular",
+                            "desc": "stage d'un mois chez Mariloo.com"
+                        },
+                        {
+                            "year": "2023",
+                            "title": "Formation Simplon Front End",
+                            "desc": "Spécialisation JS et React"
                         }
                     ],
-        
+
                     "stacks": [
                         {
                             "stack": [
                                 "image/8080react.png",
                                 "image/iangu.png",
                                 "image/net.png",
-                                "image/Csharp.png"
+                                "image/Csharp.png",
+                                "image/typescript.png"
                             ]
                         }
                     ],
-        
+
                     "contact": {
                         "location": "Saint André lez Lille",
                         "phone": "",
@@ -472,8 +489,6 @@
                 }
             ]
         }
-       
-        
     ],
     "stomer": [
         {
@@ -552,13 +567,13 @@
                             "desc": "Concepteur développeur d'applications"
                         }
                     ],
-        
+
                     "stacks": [
                         {
                             "stack": ["image/8080react.png", "image/poste.png"]
                         }
                     ],
-        
+
                     "contact": {
                         "location": "Calais",
                         "phone": "",
@@ -569,6 +584,5 @@
                 }
             ]
         }
-       
     ]
 }
