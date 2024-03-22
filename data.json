@@ -70,7 +70,7 @@
                             "stack": [
                                 "image/8080react.png",
                                 "image/laravel.png",
-                                "image/next.js.png"
+                                "image/next.png"
                             ]
                         }
                     ],
@@ -241,10 +241,10 @@
                     "stacks": [
                         {
                             "stack": [
-                                "image/next.js.png",
+                                "image/next.png",
                                 "image/node.png",
                                 "image/express.png",
-                                "image/typescript.png"
+                                "image/ts.png"
                             ]
                         }
                     ],
@@ -474,7 +474,7 @@
                                 "image/iangu.png",
                                 "image/net.png",
                                 "image/Csharp.png",
-                                "image/typescript.png"
+                                "image/ts.png"
                             ]
                         }
                     ],
@@ -522,9 +522,9 @@
                         {
                             "stack": [
                                 "image/8080react.png",
-                                "image/express.png",
+                                "image/expres.png",
                                 "image/node.png",
-                                "image/next.js.png"
+                                "image/next.png"
                             ]
                         }
                     ],
