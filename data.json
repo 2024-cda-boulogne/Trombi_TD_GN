@@ -388,7 +388,7 @@
             "Samer": [
                 {
                     "name": "Nicolas Herbez",
-                    "jobTitle": "Apprenti CDA",
+                    "jobTitle": "Formateur",
                     "age": "43 ans",
                     "image": "image/nicoh.jpg",
                     "about": "C'est donner l'envie d'apprendre qui m'anime.",
@@ -495,7 +495,7 @@
             "Ecques": [
                 {
                     "name": "Jean-Baptiste Lavisse",
-                    "jobTitle": "Apprenti CDA",
+                    "jobTitle": "Formateur",
                     "age": "33 ans",
                     "image": "image/jbl.jpg",
                     "about": "Bonjour je suis Jean-Baptiste Lavisse et je suis un apprenti CDA",
@@ -545,7 +545,7 @@
             "Calais": [
                 {
                     "name": "Laurie Barsby",
-                    "jobTitle": "Apprenti CDA",
+                    "jobTitle": "",
                     "age": "25 ans",
                     "image": "image/lbars.jpg",
                     "about": "Bonjour je suis Laurie Barsby et je suis un apprenti CDA",
