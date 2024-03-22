@@ -70,7 +70,7 @@
                             "stack": [
                                 "image/8080react.png",
                                 "image/laravel.png",
-                                "image/next.png"
+                                "image/next_logo.png"
                             ]
                         }
                     ],
@@ -241,7 +241,7 @@
                     "stacks": [
                         {
                             "stack": [
-                                "image/next.png",
+                                "image/next_logo.png",
                                 "image/node.png",
                                 "image/express.png",
                                 "image/ts.png"
@@ -524,7 +524,7 @@
                                 "image/8080react.png",
                                 "image/expres.png",
                                 "image/node.png",
-                                "image/next.png"
+                                "image/next_logo.png"
                             ]
                         }
                     ],
